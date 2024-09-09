@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquiry Form</title>
+</head>
+<body>
+
+    <h2>Inquiry Form</h2>
+    <form id="inquiryForm" onsubmit="sendToWhatsApp(event)">
+        <label for="name" >Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+        <br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required placeholder="Enter your number">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder = "Ex-abc@gmail.com" required>
+        <br><br>
+        <label>Payment Method</label>
+        <select name="payment" placeholder="Select payment gateway" required>
+            
+            <option name="Select" disabled selected >Select a payment gateway</option>
+            <option value="B">Bkash</option>
+            <option value="N">nagad</option>
+        </select>
+        <label>payment</label>
+        <input type ="text" id = "payment" name = "payment" placeholder="Transaction ID">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="thankYouMessage" style="display:none;">
+        <h3>Thank you for your inquiry! We will contact you soon.</h3>
+    </div>
+
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const email = document.getElementById('email').value;
+
+            // URL encode the message to ensure it is properly formatted for WhatsApp
+            const message = `Name: ${encodeURIComponent(name)}%0A` +
+                            `Phone: ${encodeURIComponent(phone)}%0A` +
+                            `Email: ${encodeURIComponent(email)}`;
+
+            // Replace with your WhatsApp number (in international format without '+')
+            const phoneNumber = '8801889557133'; 
+
+            // WhatsApp API URL
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${message}`;
+
+            // Open the WhatsApp URL in a new tab
+            window.open(whatsappUrl, '_blank');
+
+            // Show the thank you message
+            document.getElementById('thankYouMessage').style.display = 'block';
+
+            // Optionally hide the form after submission
+            document.getElementById('inquiryForm').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
