@@ -2,23 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Ex-2</title>
     
 </head>
 <body>
     <!-- nav semantic tags(Section, header, article, footer) -->
-          <header style="margin: -1%;">
+          <header>
                 <h1 align = "middle" 
                      style="color: rgb(255, 255, 255); background-image:linear-gradient(to left,hsl(200, 97%, 49%), #1b30f2); 
                     margin: 0; padding: 0; font-family: Artifakt Element Heavy ;">
-                    My demo website
+                    WELCOME TO MY SPACE
                 </h1>
             <nav style = " background-image: linear-gradient(to left, #fcb116,#ed1c24); color: azure;">
-                <ul style="display:flex; gap: 20%; padding: 0;list-style-type: none;
+                <ul style="display:flex; gap: 20%;list-style-type: none;
                             justify-content: center; margin: 0px; padding: 0;">
                     <li>
-                        <a href="#" style="text-decoration:none; color:azure;">
+                        <a href="#Home" style="text-decoration:none; color:azure;">
                              <abbr title="home">
                                 <img src="/image/home.png" style="height: 30px; width: 35px; color: aliceblue;">
                             </abbr>
@@ -26,7 +26,7 @@
                     </li> 
 
                     <li>
-                        <a href="#" style="text-decoration:none; color:azure;">
+                        <a href="#About" style="text-decoration:none; color:azure;">
                              <abbr title="about us">
                                 <img src="/image/about.png" style="height: 30px; width: 35px; color: aliceblue;">
                             </abbr>
@@ -43,40 +43,52 @@
                 </ul>
             </nav>
         </header>
-     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis nam numquam consequuntur temporibus tenetur id eius quibusdam aspernatur corporis? Rerum repudiandae temporibus optio atque minima eum minus maiores eveniet! Mollitia.</p>
-            <aside>
-          <ul>
-                <li>I dont know what is this</li>
-                <li> but i am here to know</li>
-                <li>And this is the way to know something </li>
-                <li> right now on the ground</li>
-
-            </ul>
-        </aside>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae incidunt ea in saepe iusto nulla repudiandae velit, repellat molestias ut, voluptatem dolor facilis ipsam maiores nemo, aperiam ab delectus deserunt!</p>
-        <br>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut recusandae ipsa at fuga rem nobis fugit quisquam quis itaque veritatis rerum, voluptate cumque magni voluptates quam. Laudantium distinctio soluta quasi.</p>
-        <br>
-        <pre>
-            Lorem ipsum dolor sit amet consectetur, 
-            adipisicing elit. Perspiciatis pariatur
-             vero praesentium voluptatibus, quidem modi
-             ullam expedita doloribus ipsam consequuntur
-              eligendi quas harum error iure totam 
-            dolorum reiciendis! Aut, officiis?</pre>
+     <main  style="font-size: 20px;">
+        <div>
+            <h2 id="Home">
+                Home Section
+            </h2>
+            <p>
+                This website is my personal space to showcase my work, share ideas, and connect with like-minded people. Feel free to browse through my portfolio, read my blog, or drop me a message if you'd like to collaborate!
+                <br>
+                In this lab I have use lots of elements. You can see down below how many tag I have used here.
+            </p>
+            <ul> 
+                <li>Block-level elements: headings, paragraphs, lists</li> 
+                <li>Text formatting: <i>italic</i>, <b>bold</b>, <em>emphasis</em></li> 
+                <li>Navigation bar using <code>&lt;nav&gt;</code> and <code>&lt;a&gt;</code> tags</li> 
+                <li>Semantic tags: <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;footer&gt;</code></li> 
+            </ul> 
+        </div>
+        
+        <section>
+            <h3 id = "About">
+                About Section
+            </h3>
+            <article>
+                <p>
+                    Hello and welcome to my corner of the web!I'm <em>Imran Pasha Sinha</em>,
+                     a passionate Web developer who loves exploring
+                     and creating digital solutions. 
+                     This website is a showcase of my work, thoughts, 
+                     and the projects I’m working on. Whether you're here to learn more
+                      about what I do, check out my portfolio, or simply get in touch,
+                       you’re in the right place! 
+                </p>
+            </article>
+        </section>
      </main>
 
      <footer style="color:white;background-image: linear-gradient(to right,#ed1c24 ,#92278f);border: 5px solid;
                      border-image: linear-gradient(to right, #fcb116,#ed1c24) 1;" align ="center">
-       <h3 id="contact us" style="text-align: center; color: aliceblue;">Contact us</h3>
+       <h1 id="contact us" style="text-align: center; color: aliceblue;">Contact us</h1>
          <ul style="list-style-type: none; margin:3">
                 <li>Phone: +8801889557133</li>
                 <li>E-mail: agent47ips@gmail.com</li>
-                <li>FB profile:<a href="https://www.facebook.com/IMRANsLSN?mibextid=ZbWKwL"target="_blank">Imran Pasha</a> </li>
-                <li> Youtube Channel: <a href="https://www.Youtube.com/@IMRANsLU" target="_blank">@IMRANsLU</a></li>
+                <li>FB profile:<a href="https://www.facebook.com/IMRANsLSN?mibextid=ZbWKwL"target="_blank" style="color:rgb(206, 255, 107);">Imran Pasha</a> </li>
+                <li> Youtube Channel: <a href="https://www.Youtube.com/@IMRANsLU" target="_blank" style="color: rgb(206, 255, 107);">@IMRANsLU</a></li>
         </ul>
-         <p style="margin:0">If you have any questions, feel free to <a href="mailto:agent47ips@gmail.com">reach out!</a></p> 
+         <p style="margin:0">If you have any questions, feel free to <a href="mailto:agent47ips@gmail.com" style="color: rgb(206, 255, 107);">reach out!</a></p> 
      
       <p>&copy; 2024 My Webpage. All rights reserved.</p> 
      </footer>
