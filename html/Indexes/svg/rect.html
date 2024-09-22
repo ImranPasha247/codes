@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <title> SVG understandin part with Rectangle</title>
+        <meta charset ="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale =0.1">
+        <meta http-equiv = "refresh" content = "5">
+        <style> svg{ display:block; margin-bottom:50px; }</style>
+    </head>
+    <body>
+     <!-- 
+            SVG = Scalable Vector Graphics
+            Explanation of SVG tag attributes:
+            1. 'width' and 'height' define the size of the SVG canvas.
+            2. 'border: 2px solid red;' is just for visual clarity; it adds a red border around the SVG for better understanding of its boundaries.
+    -->
+
+  <!-- 
+            Explanation of <rect> tag attributes:
+            1. 'width' and 'height' specify the size of the rectangle. These values should be equal to or smaller than the SVG's width and height.
+            2. 'fill' sets the background color of the rectangle, and 'fill-opacity' controls the transparency of the fill color.
+            3. 'stroke' defines the border color, while 'stroke-width' sets the thickness of the border.
+            4. 'x' and 'y' position the rectangle within the SVG. 'x' moves it horizontally (from the left), and 'y' moves it vertically (from the top).
+            5. 'rx' and 'ry' round the corners of the rectangle. 'rx' controls the horizontal radius, and 'ry' controls the vertical radius.
+     -->
+
+        <svg
+             width = "500" height = "400"
+            style="border:2px  solid red;">
+                <rect width = "400" height = "350"
+                        fill = "orange" fill-opacity="0.4"
+                        stroke-width="15" stroke="black" stroke-opacity="0.6"
+                        x = 50 y = 25
+                            rx="5" ry="50">
+                            
+        </svg>
+    </body>
+</html>
