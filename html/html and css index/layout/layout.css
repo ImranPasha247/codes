@@ -1,3 +1,55 @@
-.body{
-    background-color: aqua;
+.container{
+    width: 1200px;
+    border : 2px solid grey;
+    margin : 0 auto;
+}
+*{
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    background-color:grey;
+    border:1px solid red;
+    overflow: hidden;
+    padding-left:20px;
+    padding-right:20px;
+}
+.logo{
+    float: left;
+    padding:20px;
+}
+nav{
+    float:right;
+    }
+    nav  ul li{
+        display: inline-block;
+          }
+    nav ul li a{
+        text-decoration: none;
+        color:white;
+        
+    }
+main{
+    width: 100%;
+    overflow: hidden;
+    display:flex;
+
+}
+main section{
+    float: left;
+    width: 70%;
+    background-color: lightgreen;
+    
+}
+main aside{
+    float:right;
+    width: 30%;
+    background-color: lightsalmon;
+    padding:20px;
+
+}
+footer{
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
 }
