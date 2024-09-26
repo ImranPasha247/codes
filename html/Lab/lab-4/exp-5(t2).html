@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp-5 Lab Task 2 (admission form)</title>
+</head>
+<body>
+    <h1 style="text-align:center;"> Online Application</h1>
+    <h2>Application Form for Admission</h2>
+    <div class="personalInformation">
+        <h2>Personal Information</h2>
+        <form action="#">
+            <!-- Student Name -->
+            <label>
+                Applicant's Name(English)(*)
+                <input type="text" name="FullName" placeholder="According to SSC Certificate" required>
+            </label>
+            <label>
+                Applicant's Name(Bangla)(*)
+                <input type="text" name="FullName" placeholder="According to SSC Certificate" required>
+            </label>
+            <br>
+            <!-- Gender & Birth Date -->
+             <select required>
+                Gender(*)
+                <option  name ="gender" value ="Select" disabled>Select</option>
+                <option name="gender" Value="Male">Male</option>
+                <option  name="gender" value="Female">Female</option>
+             </select>
+             <lable>
+                Date of Birth(*)
+                <input type="date" name="Birth">
+             </lable>
+             <!-- Parents Info -->
+              <label>
+                Father's Name (*)
+                <input type="text" name="F-Name" required>
+              </label>
+            <label>
+                 Father's Occupation (*)
+              <select required>
+               
+                <option value="Select" disabled selected>Select</option>
+                <option value="Accountant">ACCOUNTANT</option>
+                <option value="ARTIST">ARTIST</option>
+                <option value="BANKER">BANKER</option>
+                <option value="BARRISTER AT LAW">BARRISTER AT LAW</option>
+                <option value="BUSINESS">BUSINESS</option>
+                <option value="CONTRACTOR">CONTRACTOR</option>
+                <option value="CHEF">CHEF</option>
+                <option value="DOCTOR">DOCTOR</option>
+                <option value="ENGINEER">ENGINEER</option>
+                <option value="FARMER">FARMER</option>
+                <option value="GOVERNMENT SERVICE">GOVERNMENT SERVICE</option>
+                <option value="JOURNALIST">JOURNALIST</option>
+                <option value="JUDGE">JUDGE</option>
+                <option value="LAWYER">LAWYER</option>
+                <option value="POLITION">POLITION</option>
+                <option value="TEACHER">TEACHER</option>
+                <option value="NURSE">NURSE</option>
+                <option value="MECHANIC">MECHANIC</option>
+                <option value="OTHERS">OTHERS</option>
+              </select>
+            </label>
+              <label>
+                Mother's Name (*)
+                <input type="text" name="M-Name" required>
+              </label>
+                <label>
+                    Mother's Occupation (*)
+                    <select required> 
+                        <option value="Select" disabled selected>Select</option>
+                        <option value="Accountant">ACCOUNTANT</option>
+                        <option value="ARTIST">ARTIST</option>
+                        <option value="BANKER">BANKER</option>
+                        <option value="BARRISTER AT LAW">BARRISTER AT LAW</option>
+                        <option value="HOUSE WIFE">HOUSE WIFE</option>
+                        <option value="CONTRACTOR">CONTRACTOR</option>
+                        <option value="CHEF">CHEF</option>
+                        <option value="DOCTOR">DOCTOR</option>
+                        <option value="ENGINEER">ENGINEER</option>
+                        <option value="FARMER">FARMER</option>
+                        <option value="GOVERNMENT SERVICE">GOVERNMENT SERVICE</option>
+                        <option value="JOURNALIST">JOURNALIST</option>
+                        <option value="JUDGE">JUDGE</option>
+                        <option value="LAWYER">LAWYER</option>
+                        <option value="POLITION">POLITION</option>
+                        <option value="TEACHER">TEACHER</option>
+                        <option value="NURSE">NURSE</option>
+                        <option value="MECHANIC">MECHANIC</option>
+                        <option value="OTHERS">OTHERS</option>
+                    </select>
+                </label>
+        </form>
+    </div>
+</body>
+</html>

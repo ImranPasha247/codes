@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title>Exp-5 lab task 1(Medical Form)</title>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale 1.0">
+        <style>
+            body{
+                background-image:linear-gradient(to bottom right,#1488CC, #2B32B2);
+
+            }
+            .hospitalForm{
+                padding-left:50px;
+                margin-left:200px;
+                margin-right:150px;
+                background-image: linear-gradient(to bottom right,#4FACFE, #00F2FE);
+            }
+            label{
+                font-size:20px;
+            }
+            .input{
+                background-color: #c8e3ff;
+                font-size: 15px;
+                width:95%;
+                margin-bottom:15px;
+            }
+            textarea{
+                background-color: #f8fcfc;
+                
+            }
+            option{
+                background-color: #f8fcfc;
+            }
+            select{
+                background-color: #f8fcfc;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hospitalForm">
+            <h1 style="text-align:center;">Hospital Admission Form</h1>
+            <h2>Patient Information</h2>
+            <form>
+                <!-- Name -->
+                <label for="Name" >Name <br>
+                    <input type ="text" name = "Name" placeholder="First" required  class="input">
+                    <input type ="text" name = "Name" placeholder="Middle"  class="input"> 
+                    <input type ="text" name = "Name" placeholder="last" required  class="input"> 
+                </label>
+                <br><br>
+                <!-- Address -->
+                <label for="Address">Address
+                    <br>
+                    <input type="text" name="Address" placeholder="Steet Address" class="input">
+                    <br> 
+                    <input type="text" name="Address" placeholder="Steet Address Line 2"  class="input">
+                    <br>
+                    <input type="text" name="Address" placeholder="City"  class="input">
+                    <br>
+                    <input type="text" name="Address" placeholder="Region"  class="input">
+                    <br>
+                    <input type="text" name="Address" placeholder="Postal/Zip Code"  class="input">
+                    <br>
+                </label>                
+                 <!-- Country -->
+                 <label>Your Country
+                    <br>
+                 <select name="Country" placeholder="Contry">
+                    <option value="Ban">Bangladesh</option>
+                    <option value="Ind">India</option>
+                    <option value="Pak">Pakisthan</option>
+                    <option value="UAE">United Arab Emirat</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="US">United State</option>
+                    <option value="Turkey">Turkey</option>
+                    <option value="China">China</option>
+                </select>
+            </label>
+            <br><br>
+                <!-- Date of Birth -->
+                <label for="DateOfBirth">Date of Birth
+                    <br>
+                    <input type="date" name="DateOfBirth"  class="input">
+                </label>
+                <br>
+                 <!-- Phone -->
+                <label for="Phone">Phone
+                        <select name="ContryCode">
+                            <option value="+880">+880(Bangladesh)</option>
+                            <option value="+91">+91(India)</option>
+                            <option value="+92">+92(Pakisthan)</option>
+                            <option value="+971">+971(UAE)</option>
+                            <option value="+44">+44(US)</option>
+                            <option value="+1">+1(Uk)</option>
+                            <option value="+90">+90(Tureky)</option>
+                            <option value="+86">+86(China)</option>
+                        </select>
+                    <input type="tel" name="Phone" placeholder="Enter your phone number">
+                </label>
+                <br>
+                <!-- Email -->
+                <label for="Email">Email
+                    <input type="email" name="Email" placeholder="abc@gmail.com"  class="input">
+                </label>
+                <!-- Health Info -->
+                 <h2>Health Summary</h2>
+                    <h4 style="margin-bottom:0;">I am</h4>
+                <label for="rh">
+                    <input type="radio" name="Iam" value="Right Handed">
+                    Right Handeed
+                </label>
+                <br>
+                <label for="lh">
+                     <input type="radio" name="Iam" value="Left Handed">
+                    Left Handeed
+                </label>
+                <br><br>    
+                <!-- Occupations -->
+                <label for="Occupation">
+                    What is Your Occupation?
+                    <input type="text" name="Occupation"  class="input">
+                </label>
+                
+                <!-- Health Condition -->
+                  <h3 style="margin-top:0px; margin-bottom:10px;">Do you have any of the following health conditions?</h3>  
+                <label for="D">
+                    <input type="checkbox" name="Diabetes" value="Diabetes">
+                    Diabetes
+                </label>
+                <br>
+                <label for="HD">
+                    <input type="checkbox" name="Heart Disease" value="Heart Disease">
+                    Heart Disease
+                </label>
+                <br>
+                <label for="As">
+                    <input type="checkbox" name="Asthma" value="Asthma">
+                    Asthma
+                </label>
+                <br>
+                <label for="HBP">
+                    <input type="checkbox" name="High Blood Pressure" value="High Blood Pressure">
+                    High Blood Pressure
+                </label>
+                <br>
+                <label for="O">
+                    <input type="checkbox" name="Other:" value="Others">
+                    Others:
+                </label>   
+                <br>
+
+                <!-- Illness -->
+                 <label for="Illness">Any other illness?
+                    <input type="text" name="illness"  class="input">
+                 </label>
+                 <br>
+                 <!-- medicine -->
+                 <label for="medications">Do you take any other regular medications?
+                    <br>
+                    <input type="text" name="medications"  class="input">
+                 </label>
+                 <br>
+                 <!-- allergies -->
+                 <label for="allergies">Do you have any allergies?
+                    <br>
+                    <input type="text" name="allergies"  class="input">
+                 </label>
+                 <br>
+                 <!-- Surgery -->
+                 <label for="surgery">Have you had any previous major surgery in the last 5 years? Please details
+                    <br>
+                    <textarea name="detail"></textarea>
+                 </label>
+                 <br>
+                 <!-- signature -->
+                  <h3 style="margin-top:0px; margin-bottom:10px;">Consent</h3>
+                  <label> signature <br>
+                    <input type="file" name="Signature"  class="input">
+                  </label>
+                  <!-- Submit -->
+                   <input type="submit" name="submit" value="submit">
+                   <input type="reset" name="reset" value="Reset">
+            </form>
+        </div>
+    </body>
+</html>
