@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exp-5 Lab Task 2 (admission form)</title>
+    <style>
+      input{
+        margin-bottom:10px;
+      }
+    </style>
 </head>
 <body>
     <h1 style="text-align:center;"> Online Application</h1>
@@ -18,7 +23,7 @@
             </label>
             <label>
                 Applicant's Name(Bangla)(*)
-                <input type="text" name="FullName" placeholder="According to SSC Certificate" required>
+                <input type="text" name="FullName" required>
             </label>
             <br>
             <!-- Gender & Birth Date -->
@@ -32,6 +37,7 @@
                 Date of Birth(*)
                 <input type="date" name="Birth">
              </lable>
+             <br>
              <!-- Parents Info -->
               <label>
                 Father's Name (*)
@@ -63,6 +69,7 @@
                 <option value="OTHERS">OTHERS</option>
               </select>
             </label>
+            <br>
               <label>
                 Mother's Name (*)
                 <input type="text" name="M-Name" required>
@@ -92,6 +99,301 @@
                         <option value="OTHERS">OTHERS</option>
                     </select>
                 </label>
+                <br>
+                <!-- Gurdian -->
+                <label>
+                  Gurdian's Name
+                  <input type="text" name="GurdianName">
+                </label>
+                <label>
+                  Gurdian's Occupation
+               <select>
+                 <option value="Select" disabled selected>Select</option>
+                 <option value="Accountant">ACCOUNTANT</option>
+                 <option value="ARTIST">ARTIST</option>
+                 <option value="BANKER">BANKER</option>
+                 <option value="BARRISTER AT LAW">BARRISTER AT LAW</option>
+                 <option value="BUSINESS">BUSINESS</option>
+                 <option value="CONTRACTOR">CONTRACTOR</option>
+                 <option value="CHEF">CHEF</option>
+                 <option value="DOCTOR">DOCTOR</option>
+                 <option value="ENGINEER">ENGINEER</option>
+                 <option value="FARMER">FARMER</option>
+                 <option value="GOVERNMENT SERVICE">GOVERNMENT SERVICE</option>
+                 <option value="JOURNALIST">JOURNALIST</option>
+                 <option value="JUDGE">JUDGE</option>
+                 <option value="LAWYER">LAWYER</option>
+                 <option value="POLITION">POLITION</option>
+                 <option value="TEACHER">TEACHER</option>
+                 <option value="NURSE">NURSE</option>
+                 <option value="BUSINESS">BUSINESS</option>
+                 <option value="MECHANIC">MECHANIC</option>
+                 <option value="OTHERS">OTHERS</option>
+               </select>
+             </label>
+             <br>
+             <!-- Applicants info -->
+              <label>
+                    Applicant's Mobile Number (*)
+                <input type="tel" name="Number" placeholder="Ex-01XXXXXXXXX" required>
+              </label>
+              <label>
+                    Alternative Number
+                <input type="tel" name="Number" placeholder="Ex-01XXXXXXXXX">
+              </label>
+              <br>
+              <label>
+                    Applicant's Email
+                <input type="email" name="email" placeholder="abc@gmail.com">
+              </label>
+              <label>
+                    Father/Gurdian Mobile No. (*)
+                <input type="tel" name="G.M.N" placeholder="Ex-01XXXXXXXXX" required>
+              </label>
+              <br>
+              <label>
+                    Nationality (*)
+                <input type="text" name="Nationality" value="Bangladeshi" required>
+              </label>
+              <label>
+                    Country (*)
+                <input type="text" name="Country" value="Bangladesh" required>
+              </label>
+              <br>
+              <label>
+                Merital Status (*)
+                <select required>
+                  <option value="Select" disabled selected>Select</option>
+                  <option value="Single">Single</option>
+                  <option value="Married">Married</option>
+                </select>
+              </label>
+              <label>
+                    Religion (*)
+                <select required>
+                  <option value="select" disabled selected>Select</option>
+                  <option value="Islam">Islam</option>
+                  <option value="Hinduism">Hinduism</option>
+                  <option value="Buddism">Buddism</option>
+                  <option value="Christianity">Christianity</option>
+                  <option value="Others">Others</option>
+                </select>
+              </label>
+              <br>
+              <label>
+                    Passport No (If any)
+                <input type="text" name="passport">
+              </label>
+              <label>
+                    Blood Group
+                    <select>
+                      <option value="Select" disabled selected>Select Blood Group</option>
+                      <option value="A+">A+ve</option>
+                      <option value="A-">A-ve</option>
+                      <option value="B+">B+ve</option>
+                      <option value="B-">B-ve</option>
+                      <option value="AB+">AB+ve</option>
+                      <option value="AB-">AB-ve</option>
+                      <option value="O+">O+ve</option>
+                      <option value="O-">O-ve</option>
+                    </select>
+              </label>
+              <br>
+              <label>
+                    National ID No.
+                <input type="number" name="num">
+              </label>
+              <label>
+                    Birth Certificate No.
+                <input type="number" name="number">
+              </label>
+              <br>
+              <!-- Present Address -->
+              <h3> Present Address</h3>
+              <label>
+                    House No./Name
+                    <input type = "text" name="house">
+              </label>
+              <br>
+              <label>
+                    Road/Village(*)
+                    <input type="text" name="road" required>
+              </label>
+              <br>
+              <label>
+                    Area/Post Office(*)
+                    <input type="text" name="area" required>
+              </label>
+              <br>
+              <label>
+                    Thana/Upazila(*)
+                    <input type="text" name="thana" required>
+              </label>
+              <br>
+              <label>
+                District(*)
+                <input type="text" name="District" required>
+              </label>
+              <!-- Permanent Address -->
+              <h3> Present Address</h3>
+              <label>
+                    House No./Name
+                    <input type = "text" name="house">
+              </label>
+              <br>
+              <label>
+                    Road/Village(*)
+                    <input type="text" name="road" required>
+              </label>
+              <br>
+              <label>
+                    Area/Post Office(*)
+                    <input type="text" name="area" required>
+              </label>
+              <br>
+              <label>
+                    Thana/Upazila(*)
+                    <input type="text" name="thana" required>
+              </label>
+              <br>
+              <label>
+                District(*)
+                <input type="text" name="District" required>
+              </label>
+              <h2>Academic Information</h2>
+              <p style="color:red">Go through the Instruction and Admission Eligibility carefully. Apply only when you meet the minimum admission requrements for the program you intend to study</p>
+              <table>
+                <!-- head -->
+                <tr>
+                <th>Examination/Degree</th>
+                <th>Board Name</th>
+                <th>School/College</th>
+                <th>Passing Year</th>
+                <th>Group</th>
+                <th>GPA/CGPA</th>
+                <th>Marks /GPA Without optionl</th>
+                </tr>
+                <!-- 1st row -->
+                <tr>
+                    <td>
+                        <select name="inter" required>
+                        <option value="select" disabled selected>Select</option>
+                        <option value="HSC">HSC</option>
+                        <option value="Alim">Alim</option>
+                        <option value="Vocational">Vocational</option>
+                        <option value="A Level">A Lavel</option>
+                        <option value="HSC(BM)">HSC(BM)</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Dawra-e Hadith (Takmil)">Dawra-e Hadith (Takmil)</option>
+                      </select>
+                    </td>
+                    <td>
+                      <select name="board" required>
+                        <option value="select" disabled selected>Select</option>
+                        <option value="Barisal">Barisal</option>
+                        <option value="Chittagong">Chittagong</option>
+                        <option value="Comilla">Comilla</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Jessore">Jessore</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Sylhet">Sylhet</option>
+                        <option value="Dinajpur">Dinajpur</option>
+                        <option value="Madrasah">Madrasah</option>
+                        <option value="Techinal">Techinal</option>
+                        <option value="Others">Others</option>
+                      </select>
+                    </td>
+                    <td><input type="text" name="College" placeholder="College Name" required></td>
+                    <td><input type="number" name="year"placeholder="year" required></td>
+                    <td>
+                      <select name="group" required>
+                        <option value="select" disabled selected>Select</option>
+                        <option value="Science">Science</option>
+                        <option value="Business Studies">Business Studies</option>
+                        <option value="Humanities/General">Humanities/General</option>
+                      </select>
+                    </td>
+                    <td><input type="number" name="gpa" placeholder="GPA"></td>
+                    <td><input type="number" name="ogpa" placeholder="GPA"></td>
+                </tr>
+                <!-- 2nd row -->
+                <tr>
+                  <td>
+                      <select name="ssc" required>
+                      <option value="select" disabled selected>Select</option>
+                      <option value="SSC">SSC</option>
+                      <option value="Dakhil">Dakhil</option>
+                      <option value="Vocational">Vocational</option>
+                      <option value="O Level">O Lavel</option>
+                      <option value="Diploma">Diploma</option>
+                      <option value="Dawra-e Hadith (Takmil)">Dawra-e Hadith (Takmil)</option>
+                    </select>
+                  </td>
+                  <td>
+                    <select name="board" required>
+                      <option value="select" disabled selected>Select</option>
+                      <option value="Barisal">Barisal</option>
+                      <option value="Chittagong">Chittagong</option>
+                      <option value="Comilla">Comilla</option>
+                      <option value="Dhaka">Dhaka</option>
+                      <option value="Jessore">Jessore</option>
+                      <option value="Mymensingh">Mymensingh</option>
+                      <option value="Rajshahi">Rajshahi</option>
+                      <option value="Sylhet">Sylhet</option>
+                      <option value="Dinajpur">Dinajpur</option>
+                      <option value="Madrasah">Madrasah</option>
+                      <option value="Techinal">Techinal</option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </td>
+                  <td><input type="text" name="School" placeholder="School Name" required></td>
+                  <td><input type="number" name="year"placeholder="year" required></td>
+                  <td>
+                    <select name="group" required>
+                      <option value="select" disabled selected>Select</option>
+                      <option value="Science">Science</option>
+                      <option value="Business Studies">Business Studies</option>
+                      <option value="Humanities/General">Humanities/General</option>
+                    </select>
+                  </td>
+                  <td><input type="number" name="gpa" placeholder="GPA"></td>
+                  <td><input type="number" name="ogpa" placeholder="GPA"></td>
+              </tr>
+              </table>
+              <div class="pic">
+                <h3>Upload Picture</h3>
+                <input type="file" name="photo" required>
+              </div>
+              <div class="signature">
+                <h3>signature</h3>
+                <input type="file" name="signature" required>
+              </div>
+              <h2>Pament of Application Fee</h2>
+              <table>
+                <tr>
+                  <th>Application Fee</th>
+                  <th>Pament Methode</th>
+                  <th> Trasaction Details</th>
+                </tr>
+                <tr>
+                  <td><input type="number" name="fee" placeholder="2000/-" disabled></td>
+                  <td>
+                    <select name="paymnet">
+                      <option value="SM" disabled selected>Select Method</option>
+                      <option value="bk">bKash</option>
+                      <option value="c">Cash</option>
+                    </select>
+                  </td>
+                  <td><input type="text" name="td" placeholder="Trans ID: XXXXXXXXXX"></td>
+                </tr>
+              </table>
+              <h2>Declaration</h2>
+              <label><input type="radio" required>
+              I do hereby certify that the information provided in this application is complete and true. I understand that the University has the right to reject the application or canel my admission if any information provided herein is found false or incorrect. If my application is accepted for admission to the program applied for, I undertake to abide by all the rules and regulations of this University and ensure to pay all fees & charges duly.</label>
+              <br>
+              <input type="submit" value="submit">
+              <input type="reset" value="Reset">
         </form>
     </div>
 </body>

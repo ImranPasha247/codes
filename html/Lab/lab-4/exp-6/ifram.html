@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp-6 Image</title>
+    <style>
+                * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        body{
+            background-image: url(/image/background\ Img.jpg);
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            background-size:100% 100%;      
+        }
+        header{
+            background-color: black;
+            color:rgb(255, 203, 15);
+            text-align: center;
+            font-size: 30pt;
+        } 
+        nav {
+            display:flex;
+            gap:35%;    
+            justify-content: center;
+        }
+        nav a {
+            text-decoration:none;
+            color:rgb(255, 203, 15);
+            font-size: 40pt;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header>
+           <h1> This page is for iFrame</h1>
+           <nav>
+            <a href="video.html">Video</a>
+            <a href="audio.html">Audio</a>
+            <a href="image.html">Image</a>
+           </nav>
+        </header>
+    </div>
+    <div class="frame">
+        <iframe src="image.html" frameborder="5%" width="1000" height="1200" style="margin:5%;"></iframe>
+        <iframe src="video.html" frameborder="5%" width="1000" height="1200" style="margin:4%;"></iframe>
+        <iframe src="audio.html" frameborder="5%" width="1000" height="1200" style="margin:4%;"></iframe>
+        
+    </div>
+
+</body>
+</html>

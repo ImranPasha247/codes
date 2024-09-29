@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp-6 Image</title>
+    <style>
+                 * {
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        body{
+            background-image: url(/image/background\ Img.jpg);
+            background-attachment:fixed;
+            background-repeat: no-repeat;
+            background-size:100% 100%;      
+        }
+        header{
+            background-color: black;
+            color:rgb(255, 203, 15);
+            text-align: center;
+            font-size: 30pt;
+        } 
+        nav {
+            display:flex;
+            gap:35%;    
+            justify-content: center;
+        }
+        nav a {
+            text-decoration:none;
+            color:rgb(255, 203, 15);
+            font-size: 40pt;
+        }
+        .video{
+            margin-top:20px;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header>
+           <h1> This page is for Video</h1>
+           <nav>
+            <a href="image.html">Image</a>
+            <a href="audio.html">Audio</a>
+            <a href="ifram.html">iframe</a>
+           </nav>
+        </header>
+    </div>
+    <div class="video">
+        <video controls autoplay width="60%;" >
+            <source src="/Video/Surah Al-Balad.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+</body>
+</html>

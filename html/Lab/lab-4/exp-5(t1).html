@@ -5,16 +5,20 @@
         <meta charset="UTF-8">
         <meta name = "viewport" content="width=device-width, initial-scale 1.0">
         <style>
-            body{
-                background-image:linear-gradient(to bottom right,#1488CC, #2B32B2);
-
-            }
-            .hospitalForm{
-                padding-left:50px;
-                margin-left:200px;
-                margin-right:150px;
-                background-image: linear-gradient(to bottom right,#4FACFE, #00F2FE);
-            }
+            body {
+            display: grid; 
+            place-items: center;
+            background-image: linear-gradient(to bottom right, #1488CC, #2B32B2);
+        }
+        .hospitalForm {
+            overflow-y: auto;
+            max-height:600px;
+            /* For Scrollbar */
+            width: 600px;
+            margin-top:50px;
+            padding-left: 50px;
+            background-image: linear-gradient(to bottom right, #4FACFE, #00F2FE);
+        }
             label{
                 font-size:20px;
             }
